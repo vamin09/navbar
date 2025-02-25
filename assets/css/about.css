@@ -1,23 +1,8 @@
-
 body {
     margin: 0;
     padding: 0;
   }
   
-  .second-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    background-color: #0b08d1; 
-  }
-  
-  .second-page h1 {
-    font-size: 64px;
-    color: #FFFFFF; 
-    text-align: center;
-  }
-
   .navbar {
     padding: 20px; 
     display: flex;
@@ -73,12 +58,22 @@ body {
     opacity: 1;
   }
 
-  .center-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    text-align: center; 
-    padding: 0.1px;
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content h1 {
+    color: #0b08d1;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
   }

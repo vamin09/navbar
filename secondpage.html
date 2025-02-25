@@ -8,39 +8,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/secondpage.css"> 
+  <link rel="stylesheet" href="./assets/css/secondpage.css">
   <title>Second Page</title>
 </head>
 
-<header class="header" data-header>
-    <div class="container">
-      <nav class="navbar" data-navbar>
-        <img src="https://www.pinclipart.com/picdir/big/50-506663_sky-diving-skydiving-clipart-png-transparent-png.png" alt="Logo"> 
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link hover-underline">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link hover-underline">About Us</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#FAQ" class="navbar-link hover-underline">FAQ</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#Contact" class="navbar-link hover-underline">Contact</a>
-          </li>
-          <li class="navbar-item">
-            <a href="More" class="navbar-link hover-underline">More</a>
-          </li>
-        </ul>
-      </nav>
-    </div class= "5">
+<body>
+  <header class="header" data-header>
+    <nav class="navbar" data-navbar>
+      <img src="https://www.pinclipart.com/picdir/big/50-506663_sky-diving-skydiving-clipart-png-transparent-png.png" alt="Logo">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="#home" class="navbar-link hover-underline">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#about" class="navbar-link hover-underline">About Us</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#FAQ" class="navbar-link hover-underline">FAQ</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#Contact" class="navbar-link hover-underline">Contact</a>
+        </li>
+        <li class="navbar-item">
+          <a href="More" class="navbar-link hover-underline">More</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-<body>
-  <div class="second-page">
-    <h1>Start You Journey Here</h1>
+  <div class="container">
+    <div class="image-container">
+      <img id="image" src="https://skydivesuffolk.com/wp-content/uploads/2024/09/IMG_4866_proc_745000475-2.jpg">
+    </div>
+    <div class="controls">
+      <button id="backButton">Back</button>
+      <button id="nextButton">Next</button>
+    </div>
   </div>
+
+  <script src="./assets/js/secondpage.js"></script>
 </body>
 
 </html>

@@ -24,3 +24,4 @@ const autoSlide = () => {
 };
 
 window.addEventListener("load", autoSlide);
+
