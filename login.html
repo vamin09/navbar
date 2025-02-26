@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooted - Sign Up / Log In</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rooted</h1>
+        <div id="sign-up">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="signup-email" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+            <div class="form-group">
+                <a href="#log-in" onclick="document.getElementById('sign-up').style.display='none'; document.getElementById('log-in').style.display='block';">Already have an account? Log In</a>
+            </div>
+        </div>
+        <div id="log-in" style="display:none;">
+            <h2>Log In</h2>
+            <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Log In</button>
+            </div>
+            <div class="form-group">
+                <a href="#sign-up" onclick="document.getElementById('log-in').style.display='none'; document.getElementById('sign-up').style.display='block';">Don't have an account? Sign Up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
