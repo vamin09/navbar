@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #000000; /* Black background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,12 +9,11 @@ body {
 }
 
 .popup {
-    background-color: #000000;
-    padding: 20px;
+    background-color: #FFFFFF;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-    width: 100%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    width: 400px;
     text-align: center;
 }
 
@@ -23,7 +22,7 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 20px;
     color: #FFD700;
     text-align: center;
@@ -33,24 +32,53 @@ h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
     color: #FFD700;
-    text-align: center;
 }
 
 .form-group {
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #FFD700;
+    color: #000000;
 }
 
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    color: #FFD700; 
+    background-color: #000000; 
 
+}
 
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFD700;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
 
+.form-group button:hover {
+    background-color: #FFC107;
+}
 
+.form-group a {
+    display: block;
+    margin-top: 10px;
+    color: #FFD700;
+    text-decoration: none;
+    text-align: center;
+}
 
-
-
+.form-group a:hover {
+    text-decoration: underline;
+}
