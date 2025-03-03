@@ -82,3 +82,48 @@ h2 {
 .form-group a:hover {
     text-decoration: underline;
 }
+
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.google-btn:hover {
+    background-color: #357AE8;
+}
+
+.google-btn i {
+    margin-right: 10px;
+}
+
+.instagram-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #E4405F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-btn:hover {
+    background-color: #C13584;
+}
+
+.instagram-btn i {
+    margin-right: 10px;
+}
