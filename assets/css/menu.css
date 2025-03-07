@@ -101,12 +101,16 @@ body {
 }
 
 .menu-item img {
-  width: 150px;  
-  height: 150px;  
+  min-width: 150px;  
+  max-width: 150px;  
+  max-height: 150px;
   object-fit: cover;
   border-radius: 5px;
-  margin-left: 0;  
+  display: block;
+  margin: 0;
+  padding: 0;
 }
+
 
 .menu-text {
   text-align: center;  
