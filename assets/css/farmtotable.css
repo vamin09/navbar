@@ -1,70 +1,65 @@
 body {
     background-color: #0a0a0a;
-    color: #FFD700;
+    color: white;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.hero {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.page-title {
     text-align: center;
+    padding: 20px 20px;
 }
 
-.hero h1 {
+.page-title h1 {
     font-size: 3rem;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
-.farm-to-table {
-    max-width: 1200px;
-    margin: auto;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.farm-to-table h1 {
-    font-size: 2.5rem;
+    color: gold;
     text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.steps-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    height: 80vh;
+    gap: 20px;
+}
+
+.step-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-image img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.step-text {
+    flex: 1;
     padding: 20px;
-    border-radius: 15px;
+    text-align: left;
 }
 
-.step i {
-    font-size: 40px;
-    margin-bottom: 10px;
+.step-text h2 {
+    font-size: 2.2rem;
+    color: gold;
 }
 
-.step h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.step-text p {
+    font-size: 1.4rem;
+    color: #ddd;
 }
 
-.step p {
-    font-size: 1rem;
-}
-
-.divider {
-    width: 60px;
-    height: 4px;
-    margin: 30px auto;
+.reverse {
+    flex-direction: row-reverse;
 }
