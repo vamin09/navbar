@@ -25,3 +25,27 @@ const autoSlide = () => {
 
 window.addEventListener("load", autoSlide);
 
+document.addEventListener("DOMContentLoaded", function () {
+  const themeToggle = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  
+  if (localStorage.getItem("theme") === "light") {
+      body.classList.add("light-mode");
+      themeToggle.textContent = "🌙 Switch to Dark Mode";
+  }
+
+  themeToggle.addEventListener("click", function () {
+      body.classList.toggle("light-mode");
+
+      if (body.classList.contains("light-mode")) {
+          localStorage.setItem("theme", "light");
+          themeToggle.textContent = "🌙 Switch to Dark Mode";
+      } else {
+          localStorage.setItem("theme", "dark");
+          themeToggle.textContent = "☀️ Switch to Light Mode";
+      }
+  });
+});
+
+
