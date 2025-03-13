@@ -1,88 +1,75 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar {
-    padding: 20px; 
-    display: flex;
-    align-items: center; 
-  }
-  
-  .navbar img {
-    max-width: 100px; 
-    height: auto;
-    margin-right: 20px; 
-  }
-  
-  .navbar-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    background-color: #0b08d1;
-    border-radius: 10px;
-  }
-  
-  .navbar-link {
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-  }
-  
-  .navbar-item {
-    margin: 0 15px;
-  }
-  
-  .hover-underline {
-    position: relative;
-    max-width: max-content;
-  }
-  
-  .hover-underline::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #FFD700;
-    transform: scaleX(0);
-    opacity: 0;
-  }
-  
-  .hover-underline:is(:hover, :focus-visible)::after {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-  
-.faq-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .faq-content h1 {
-    color: #0b08d1;
-    margin-bottom: 20px;
-  }
-  
-  .faq-item {
-    margin-bottom: 20px;
-  }
-  
-  .faq-item h3 {
-    color: #0b08d1;
-    margin-bottom: 10px;
-  }
-  
-  .faq-item p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.faq {
+  text-align: left;
+}
+
+.faq-item {
+  background-color: #222;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: gold;
+  color: black;
+  font-size: 20px;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #d4af37;
+}
+
+.faq-answer {
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-answer.active {
+  padding: 15px;
+}
+
+.icon {
+  font-size: 24px;
+  font-weight: bold;
+}
