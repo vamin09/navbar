@@ -23,11 +23,10 @@ document.getElementById("quiz-form").addEventListener("submit", function (event)
     }
 
     document.getElementById("result").textContent = `Your score: ${score}`;
-    document.getElementById("result").style.display = "block"; // Make it visible
-
+    document.getElementById("result").style.display = "block"; 
 });
 
-let timeLeft = 60;
+let timeLeft = 15;
 const timerDisplay = document.getElementById("time");
 
 function updateTimer() {
@@ -39,7 +38,8 @@ function updateTimer() {
         timeLeft--;
         setTimeout(updateTimer, 1000);
     } else {
-        document.getElementById("quiz-form").submit(); // Auto-submit when time runs out
+        document.getElementById("quiz-form").dispatchEvent(new Event("submit")); 
+        timerDisplay.textContent = "0:00"; 
     }
 }
 
